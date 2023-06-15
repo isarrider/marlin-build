@@ -53,7 +53,7 @@ done <<< $(find /home/platformio/CustomConfiguration/ -name '*.h' -exec basename
 sed -i "s/default_envs = .*/default_envs = $BOARD/g" /home/platformio/Marlin/platformio.ini
 
 # Fix bug of wrong platform-ststm32 Version (https://github.com/platformio/platform-ststm32)
-# sed 's/1.80000.0/1.90201.0/g' /home/platformio/Marlin/platform.json
+# sed 's/1.80000.0/1.90201.0/g' /home/platformio/platform.json
 
 # Build Marlin firmware
 printf "\e[1;35mCompiling Marlin firmware..\e[0m\n\n"
